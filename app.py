@@ -21,27 +21,27 @@ st.subheader('Data from 2020-2022')
 st.write(df.describe())
 
 #Visualization
-#st.subheader('Closing Price vs Time Chart')
-#fig = plt.figure(figsize = (12,6))
-#plt.plot(df.Close)
-#st.pyplot(fig)
+st.subheader('Closing Price vs Time Chart')
+fig = plt.figure(figsize = (12,6))
+plt.plot(df.Close)
+st.pyplot(fig)
 
 #st.subheader('Closing Price vs Time Chart with 50MA')
-#ma50 = df.Close.rolling(50).mean()
-#fig = plt.figure(figsize = (12,6))
-#plt.plot(ma50)
-#plt.plot(df.Close)
-#st.pyplot(fig)
+ma50 = df.Close.rolling(50).mean()
+fig = plt.figure(figsize = (12,6))
+plt.plot(ma50)
+plt.plot(df.Close)
+st.pyplot(fig)
 
 
 #st.subheader('Closing Price vs Time Chart with 100MA')
-#ma50 = df.Close.rolling(50).mean()
-#ma100 = df.Close.rolling(100).mean()
-#fig = plt.figure(figsize = (12,6))
-#plt.plot(ma50, 'r')
-#plt.plot(ma100, 'g')
-#plt.plot(df.Close, 'b')
-#st.pyplot(fig)
+ma50 = df.Close.rolling(50).mean()
+ma100 = df.Close.rolling(100).mean()
+fig = plt.figure(figsize = (12,6))
+plt.plot(ma50, 'r')
+plt.plot(ma100, 'g')
+plt.plot(df.Close, 'b')
+st.pyplot(fig)
 
 
 #Splitting data into Training and Testing
