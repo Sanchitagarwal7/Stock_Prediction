@@ -6,8 +6,8 @@ import pandas_datareader as data
 from keras.models import load_model
 import streamlit as st
 
-start = '2010-01-01'
-end = '2019-12-31'
+start = '2012-01-01'
+end = '2022-11-30'
 
 st.title('Stock Trend Prediction')
 
@@ -17,7 +17,7 @@ df.head()
 
 #Describing data
 
-st.subheader('Data from 2020-2022')
+st.subheader('Data from 2012-2022')
 st.write(df.describe())
 
 #Visualization
